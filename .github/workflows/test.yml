@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
       - name: Run tests
-        run: yarn test
+        run: yarn test:quick # TODO: use yarn test when coverage report is relevant
   short:
     runs-on: ubuntu-latest
     strategy:
@@ -38,4 +38,4 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
       - name: Run unit tests
-        run: npx jest
+        run: yarn test:quick

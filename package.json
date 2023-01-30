@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "test": "jest --coverage && eslint .",
+    "test:quick": "jest --coverage=false",
     "commit": "git-cz"
   },
   "author": "Maksym Portianoi <portimaksym@gmail.com>",
