@@ -8,6 +8,8 @@
     "postcss-plugin",
     "postcss-ukrainian-stylesheets"
   ],
+  "type": "commonjs",
+  "main": "src/index.js",
   "scripts": {
     "test": "jest --coverage && eslint .",
     "test:quick": "jest --coverage=false",
@@ -62,5 +64,8 @@
     "commitizen": {
       "path": "@commitlint/prompt"
     }
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

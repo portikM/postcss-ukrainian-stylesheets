@@ -1,6 +1,6 @@
 const postcss = require('postcss')
 
-const plugin = require('./')
+const plugin = require('../src')
 
 // eslint-disable-next-line no-unused-vars
 async function run (input, output, opts = { }) {
