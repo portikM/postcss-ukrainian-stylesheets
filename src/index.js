@@ -1,4 +1,3 @@
-const _ = require('lodash');
 const UAProperties = require('./properties')
 const UAValues = require('./values')
 
@@ -8,29 +7,28 @@ const UAValues = require('./values')
  */
 
 module.exports = (opts = {}) => {
-
   return {
     postcssPlugin: 'postcss-ukrainian-stylesheets',
     Root (root, postcss) {
       root.walkDecls((decl) => {
         // Properties
-        _.forEach(UAProperties, (value, key) => {
+        for (const [key, value] of Object.entries(UAProperties)) {
           if (decl.prop === value) {
-            decl.prop = key;
+            decl.prop = key
           }
-        });
+        }
 
         // Values
-        _.forEach(UAValues, (value, key) => {
-          decl.value = decl.value.replace(value, key);
-        });
+        for (const [key, value] of Object.entries(UAValues)) {
+          decl.value = decl.value.replace(value, key)
+        }
 
         // Important
         if (decl.value.indexOf('!важливо') >= 0) {
-          decl.value = decl.value.replace(/\s*!важливо\s*/, '');
-          decl.important = true;
+          decl.value = decl.value.replace(/\s*!важливо\s*/, '')
+          decl.important = true
         }
-      });
+      })
     }
   }
 }
