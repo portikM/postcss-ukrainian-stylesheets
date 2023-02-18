@@ -6,13 +6,19 @@
 
 ```css
 .foo {
-  /* Input example */
+  колір: жовтогарячий;
+  колір-фону: світло-блакитний;
+  межа: 1px суцільно червоний !важливо;
+  значення-аплікати: 10;
 }
 ```
 
 ```css
 .foo {
-  /* Output example */
+  color: orange;
+  background-color: lightblue;
+  border: 1px solid red !important;
+  z-index: 10;
 }
 ```
 
@@ -41,5 +47,10 @@ module.exports = {
   ]
 }
 ```
+
+### Reference
+
+* [Properties](https://github.com/portikM/postcss-ukrainian-stylesheets/blob/main/src/properties.js)
+* [Values](https://github.com/portikM/postcss-ukrainian-stylesheets/blob/main/src/values.js)
 
 [official docs]: https://github.com/postcss/postcss#usage
