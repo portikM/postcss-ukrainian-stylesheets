@@ -1,6 +1,6 @@
 {
   "name": "postcss-ukrainian-stylesheets",
-  "version": "1.x.x",
+  "version": "1.0.0",
   "description": "PostCSS plugin for writing Ukrainian Style Sheets",
   "keywords": [
     "postcss",
