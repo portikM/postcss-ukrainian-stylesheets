@@ -1,6 +1,6 @@
 {
   "name": "postcss-ukrainian-stylesheets",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "PostCSS plugin for writing Ukrainian Style Sheets",
   "keywords": [
     "postcss",
@@ -65,5 +65,10 @@
       "path": "@commitlint/prompt"
     }
   },
-  "dependencies": {}
+  "dependencies": {},
+  "release": {
+    "branches": [
+      "main"
+    ]
+  }
 }
