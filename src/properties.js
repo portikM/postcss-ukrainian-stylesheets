@@ -153,6 +153,7 @@ module.exports = {
   'transition-timing-function': 'функція-хронометражу-переходу',
   'transition': 'перехід',
   'unicode-bidi': 'юнікод-біді', // це шось азарівською?
+  'user-select': 'вибір-користувача',
   'vertical-align': 'вертикальне-вирівнювання',
   'visibility': 'видимість',
   'white-space': 'пробіл',
