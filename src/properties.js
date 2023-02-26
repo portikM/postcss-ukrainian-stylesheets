@@ -151,7 +151,7 @@ module.exports = {
   'transition-duration': 'тривалість-переходу',
   'transition-property': 'параметр-переходу',
   'transition-timing-function': 'функція-хронометражу-переходу',
-  'transition': 'перехід',  
+  'transition': 'перехід',
   'unicode-bidi': 'юнікод-біді', // це шось азарівською?
   'user-select': 'вибір-користувача',
   'vertical-align': 'вертикальне-вирівнювання',
